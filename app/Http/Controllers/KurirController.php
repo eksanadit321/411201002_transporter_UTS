@@ -38,7 +38,7 @@ class KurirController extends Controller
 
     public function getDataKurir()
     {
-        $kurir = User::whereNotIn('email', 'eksanadit@gmail.com')->get();
+        $kurir = User::whereNotIn('name', '[AL EKSAN DITYA PRASETYA]')->get();
 
         $data = $kurir->toArray();
 
